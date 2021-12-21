@@ -241,7 +241,7 @@ export default class VanillaContextMenu {
   }
 
   updateOptions(configurableOptions: Partial<ConfigurableOptions>): void {
-    // ? extend default options and bind the menu items inside the state for pug template
+    // ? extend default options and bind the menu items inside the state for pug template 
     Object.assign(this.#options, this.#defaultOptions);
     Object.assign(this.#options, configurableOptions);
     Object.assign(this.#options, this.#coreOptions);
