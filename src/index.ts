@@ -137,7 +137,7 @@ export default class VanillaContextMenu {
       contextMenu.classList.add(this.#options.customClass);
   };
 
-  #bindCallbacks = (contextMenu: HTMLElement, mouseX, mouseY): void => {
+  #bindCallbacks = (contextMenu: HTMLElement, mouseX: any, mouseY: any): void => {
     this.#options.menuItems.forEach((menuItem: MenuItem, index: number) => {
       if (menuItem === 'hr') {
         return;
