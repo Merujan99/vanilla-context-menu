@@ -137,7 +137,7 @@ export default class VanillaContextMenu {
       contextMenu.classList.add(this.#options.customClass);
   };
 
-  #bindCallbacks = (contextMenu: HTMLElement): void => {
+  #bindCallbacks = (contextMenu: HTMLElement, mouseX, mouseY): void => {
     this.#options.menuItems.forEach((menuItem: MenuItem, index: number) => {
       if (menuItem === 'hr') {
         return;
@@ -146,7 +146,7 @@ export default class VanillaContextMenu {
       const htmlEl: HTMLElement = contextMenu.children[index] as HTMLElement;
 
       htmlEl.onclick = () => {
-        menuItem.callback();
+        menuItem.callback({x: mouseX, y: mouseY});
 
         // ? global value for all menu items, or the individual option or false
         const preventCloseOnClick: boolean =
@@ -195,7 +195,7 @@ export default class VanillaContextMenu {
     contextMenu.oncontextmenu = (e) => e.preventDefault();
 
     // ? bind the callbacks on each option
-    this.#bindCallbacks(contextMenu);
+    this.#bindCallbacks(contextMenu, mouseX, mouseY);
 
     // ? make it visible but wait an event loop to pass
     setTimeout(() => {
