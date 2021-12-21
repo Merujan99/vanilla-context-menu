@@ -1,6 +1,6 @@
 {
-  "name": "vanilla-context-menu",
-  "version": "1.0.1",
+  "name": "vanilla-context-menu-point",
+  "version": "1.0.0",
   "description": "Easily create context menus using vanilla JavaScript and integrate them in any web application",
   "main": "./dist/vanilla-context-menu.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeorgianStan/vanilla-context-menu.git"
+    "url": "git+https://github.com/Merujan99/vanilla-context-menu.git"
   },
   "keywords": [
     "javascript",
@@ -32,10 +32,10 @@
   "author": "Stan Georgian",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GeorgianStan/vanilla-context-menu/issues",
+    "url": "https://github.com/Merujan99/vanilla-context-menu/issues",
     "email": "georgian.stan8@gmail.com"
   },
-  "homepage": "https://github.com/GeorgianStan/vanilla-context-menu#readme",
+  "homepage": "https://github.com/mMrujan99/vanilla-context-menu#readme",
   "devDependencies": {
     "@babel/core": "^7.13.15",
     "@types/jest": "^26.0.22",
